@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TiempoDojo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="principal">
+        <!--barra navegación-->
+        <div class="nav">
+            <div class="nav-titulo">
+                <h1>DojoWeather</h1>
+            </div>
+            <div class="nav-opciones">
+                <a href="#" onclick= "alert('Cargando informe meteorológico...')">Burbank</a>
+                <a href="#" onclick= "alert('Cargando informe meteorológico...')">Chicago</a>
+                <a href="#" onclick= "alert('Cargando informe meteorológico...')">Dallas</a>
+            </div>
+        </div>
+        <!--contenido central-->
+        <div class="central">
+            <!--barra grados-->
+            <div class="opcion-grados">
+                <div class="grados-titulo">
+                    <h2>San Jose</h2>
+                </div>
+                <div class="grados-opciones">
+                    <p class="p-grados">show temperature in</p>
+                    <div class="grados">
+                        <select name="snack">
+                            <option value="#">°C</option>
+                            <option value="#">°F</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!--cuadros clima-->
+            <div class="contenedor-clima">
+                <div class="caja-clima">
+                    <h4>Today</h4>
+                    <img src="img/nube-lluvia.png" alt="icon nube con lluvia">
+                    <p>some rain</p>
+                    <div class="num-grados">
+                        <p class="grados-rojo">24°</p>
+                        <p class="grados-azul">18°</p>
+                    </div>
+                </div>
+                <!--caja clima 2-->
+                <div class="caja-clima">
+                    <h4>Tomorrow</h4>
+                    <img src="img/sol.png" alt="icon nube con lluvia">
+                    <p>some sun</p>
+                    <div class="num-grados">
+                        <p class="grados-rojo">27°</p>
+                        <p class="grados-azul">19°</p>
+                    </div>
+                </div>
+                <!--caja clima 3-->
+                <div class="caja-clima">
+                    <h4>Friday</h4>
+                    <img src="img/nube-gris.png" alt="icon nube con lluvia">
+                    <p>some clouds</p>
+                    <div class="num-grados">
+                        <p class="grados-rojo">21°</p>
+                        <p class="grados-azul">16°</p>
+                    </div>
+                </div>
+                <!--caja clima 4-->
+                <div class="caja-clima">
+                    <h4>Saturday</h4>
+                    <img src="img/sol.png" alt="icon nube con lluvia">
+                    <p>some sun</p>
+                    <div class="num-grados">
+                        <p class="grados-rojo">26°</p>
+                        <p class="grados-azul">21°</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cuadro-alerta">
+                <img src="img/logo-galleta.png" alt="icono galleta">
+                <div class="texto-alerta">
+                    <h4>Stop! Cookie time</h4>
+                    <p>We use cookies (sadly not the edible ones) to personalize content and ads,
+                    to provide social media features and to analyse our traffic. <a href="#">Read more...</a>
+                    </p>
+                </div>
+                <button onclick="eliminarAlert()"> I Accept</button>
+            </div>
+        </div>
+        <!--alerta-->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
